@@ -26,11 +26,11 @@ const Testimonials = () => {
 
       <Swiper className="container testimonials__container"
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
+      spaceBetween={40}
       slidesPerView={1}
-      navigation
+      
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+      
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}>
         <SwiperSlide className='testimonial'>
