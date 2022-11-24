@@ -11,63 +11,63 @@ const Services = () => {
       <div className="container services__container">
         <article className='service'>
           <div className="service__head">
-            <h3>UI/UX Design</h3>
+            <h3>Front-end Development</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Build high-quality user-friendly web pages.</p>
             </li>
             <li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Develop websites and applications using technologies such as HTML, CSS and JavaScriipt.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Writing organized and reusable codes.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Implementing design on mobile websites.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Managing software workflow.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating tools that improve site interaction.</p>
             </li>
           </ul>
         </article>
-        {/*END OF UI/UX */}
+        {/*END OF Front-end */}
         <article className='service'>
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Back-end Development</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Write clean code to develop functional web applications.</p>
             </li>
             <li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Troubleshoot and debug applications.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Assess efficiency and speed.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Perform quality assurance (QA) testing.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Build and maintain websites.</p>
             </li><li>
               <BiCheck  className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>writing server scripts and APIs for front-end engineers and UX designers to produce efficient programs.</p>
             </li>
           </ul>
         </article>
-        {/* END OF WEB DEV */}
-        <article className='service'>
+        {/* END OF Back-end */}
+        {/* <article className='service'>
           <div className="service__head">
             <h3>Data Analyst</h3>
           </div>
@@ -94,7 +94,7 @@ const Services = () => {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
           </ul>
-        </article>
+        </article> */}
         {/*END OF DATA ANALYST */}
       </div>
     </section>
