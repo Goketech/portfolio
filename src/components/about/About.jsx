@@ -41,7 +41,7 @@ const About = () => {
                     </div>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste nisi ad distinctio deserunt sapiente veritatis delectus atque, itaque incidunt odit, deleniti dolor ea quia quasi, earum voluptatum tempore eveniet.
+                        I am a web developer passionate about creating innovations and bringing ideas into reality. I am able to collaborate, work in a team efficiently.
                     </p>
 
                     <a href="#contact" className="btn btn-primary">Contact Me</a>
