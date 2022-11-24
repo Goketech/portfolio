@@ -41,7 +41,8 @@ const About = () => {
                     </div> */}
 
                     <p>
-                        I am a web developer passionate about creating innovations and bringing ideas into reality. I am able to collaborate, work in a team efficiently.
+                        I am a web developer passionate about creating innovations and bringing ideas into reality. I am able to collaborate and work in a team efficiently.
+                        I am constantly learning and building projects to develop my skills. I am creative and I like to engage in intresting conversations. 
                     </p>
 
                     <a href="#contact" className="btn btn-primary">Contact Me</a>
