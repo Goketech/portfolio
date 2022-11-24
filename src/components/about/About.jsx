@@ -19,7 +19,7 @@ const About = () => {
                 </div>
 
                 <div className="about__content">
-                    <div className="about__cards">
+                    {/* <div className="about__cards">
 
                         <article className="about__card">
                             <FaAward className="about__icon"/>
@@ -38,7 +38,7 @@ const About = () => {
                             <h5>Projects</h5>
                             <small>20+ Completed</small>
                         </article>
-                    </div>
+                    </div> */}
 
                     <p>
                         I am a web developer passionate about creating innovations and bringing ideas into reality. I am able to collaborate, work in a team efficiently.
