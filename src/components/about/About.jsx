@@ -1,6 +1,6 @@
 import React from "react";
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/me.jpg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
@@ -41,8 +41,7 @@ const About = () => {
                     </div> */}
 
                     <p>
-                        I am a web developer passionate about creating innovations and bringing ideas into reality. I am able to collaborate and work in a team efficiently.
-                        I am constantly learning and building projects to develop my skills. I am creative and I like to engage in intresting conversations. 
+                        I am a software engineer passionate about creating innovations and bringing ideas into reality. 
                     </p>
 
                     <a href="#contact" className="btn btn-primary">Contact Me</a>
