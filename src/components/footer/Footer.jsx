@@ -3,6 +3,7 @@ import './footer.css'
 import {FaFacebookF} from 'react-icons/fa'
 import {FiInstagram} from 'react-icons/fi'
 import {IoLogoTwitter} from 'react-icons/io'
+import {FaLinkedin} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com/profile.php?id=100064321345954"><FaFacebookF/></a>
+        <a href="https://www.linkedin.com/in/modupe-akanni/"><FaLinkedin/></a>
         <a href="https://instagram.com/adegoke_akanni"><FiInstagram/></a>
         <a href="https://twitter.com/aka_goke"><IoLogoTwitter/></a>
       </div>
