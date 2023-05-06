@@ -7,10 +7,16 @@ import axios from 'axios';
 // Article component
 const Article = ({ title, cover_image, url }) => {
   return (
-    <div>
-      <h3>{title}</h3>
-      <img src={cover_image} alt={title} />
-      <a href={url}>Read Article</a>
+    <div className='container article__container'>
+        <article className='article__item'>
+            <h3>{title}</h3>
+            <div>
+                <img className='article__item-image' src={cover_image} alt={title} />
+            </div>
+            <div className='article__item-cta'>
+                <a href={url}>Read Article</a>
+            </div>
+        </article>
     </div>
   );
 };
@@ -34,7 +40,7 @@ const Articles = () => {
 
   return (
     <div>
-      {articles.map((article) => (
+        {articles.map((article) => (
         <Article key={article.id} title={article.title} cover_image={article.cover_image} url={article.url} />
       ))}
     </div>
@@ -45,7 +51,8 @@ const Articles = () => {
 const Blog = () => {
   return (
     <div>
-      <h1>Recent Developer Articles</h1>
+        <h5>Blog</h5>
+      <h1>Recent Articles</h1>
       <Articles />
     </div>
   );
