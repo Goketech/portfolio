@@ -53,6 +53,14 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.slant-image {
+    transform: skew(-20deg);
+}
+
+.slant-image.horizontal {
+    transform: none;
+}
+
 /*========== SCROLL DOWN ==========*/
 
 .scroll__down {
