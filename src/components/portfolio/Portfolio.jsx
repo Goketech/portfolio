@@ -3,9 +3,9 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.png'
 import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/portfolio3.png'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG4 from '../../assets/portfolio4.png'
+import IMG5 from '../../assets/portfolio5.jpg'
+import IMG6 from '../../assets/portfolio6.png'
 
 const Portfolio = () => {
   return (
@@ -48,30 +48,30 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG4} alt="" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Bank App Page</h3>
           <div className="portfolio__item-cta">
-          <a href="https://github.com" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/Goketech/bank_modern_app" className='btn' target='_blank'>Github</a>
+          <a href="https://bank-modern-app-r9rw.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={IMG5} alt="" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Movie Trailer App</h3>
           <div className="portfolio__item-cta">
-          <a href="https://github.com" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/Goketech/movie-trailer-app" className='btn' target='_blank'>Github</a>
+          <a href="https://movie-trailer-app-goketech.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
             <img src={IMG6} alt="" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>OpenAI Page</h3>
           <div className="portfolio__item-cta">
-          <a href="https://github.com" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/Goketech/gpt3_goke" className='btn' target='_blank'>Github</a>
+          <a href="https://gpt3-goke.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
       </div>
