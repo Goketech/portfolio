@@ -39,7 +39,7 @@ const Articles = () => {
   }, []);
 
   return (
-    <div>
+    <div className='container article__container'>>
         {articles.map((article) => (
         <Article key={article.id} title={article.title} cover_image={article.cover_image} url={article.url} />
       ))}
@@ -52,7 +52,7 @@ const Blog = () => {
   return (
     <section id='blog'>
         <h5>Blog</h5>
-      <h1>Recent Articles</h1>
+      <h3>Recent Articles</h3>
       <Articles />
     </section>
   );
