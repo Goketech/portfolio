@@ -5,11 +5,12 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 // Article component
-const Article = ({ title, content }) => {
+const Article = ({ title, cover_image, url }) => {
   return (
     <div>
       <h3>{title}</h3>
-      <p>{content}</p>
+      <img src={cover_image} alt={title} />
+      <a href={url}>Read Article</a>
     </div>
   );
 };
