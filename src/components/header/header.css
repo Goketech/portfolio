@@ -54,7 +54,7 @@ header {
 }
 
 .slant-image {
-    transform: skew(-20deg);
+    transform: skew(-90deg);
 }
 
 .slant-image.horizontal {
