@@ -45,7 +45,6 @@ header {
     width: 22rem;
     height: 30rem;
     position: absolute;
-    rotate: 90;
     left: calc(50% - 11rem);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
@@ -54,7 +53,7 @@ header {
 }
 
 .slant-image {
-    transform: skew(-90deg);
+    transform: skew(-50deg);
 }
 
 .slant-image.horizontal {
