@@ -41,7 +41,7 @@ const Articles = () => {
 };
 
 // App component
-const App = () => {
+const Blog = () => {
   return (
     <div>
       <h1>Recent Developer Articles</h1>
@@ -50,4 +50,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Blog;
