@@ -14,7 +14,7 @@ const Article = ({ title, cover_image, url }) => {
                 <img className='article__item-image' src={cover_image} alt={title} />
             </div>
             <div className='article__item-cta'>
-                <a href={url}>Read Article</a>
+                <a target='_blank' href={url}>Read Article</a>
             </div>
         </article>
     </div>
@@ -50,11 +50,11 @@ const Articles = () => {
 // App component
 const Blog = () => {
   return (
-    <div>
+    <section id='blog'>
         <h5>Blog</h5>
       <h1>Recent Articles</h1>
       <Articles />
-    </div>
+    </section>
   );
 };
 
