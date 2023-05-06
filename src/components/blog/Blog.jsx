@@ -7,7 +7,7 @@ import axios from 'axios';
 // Article component
 const Article = ({ title, cover_image, url }) => {
   return (
-    <div className='container article__container'>
+    <div>
         <article className='article__item'>
             <h3>{title}</h3>
             <div>
@@ -39,7 +39,7 @@ const Articles = () => {
   }, []);
 
   return (
-    <div className='container article__container'>>
+    <div className='container article__container'>
         {articles.map((article) => (
         <Article key={article.id} title={article.title} cover_image={article.cover_image} url={article.url} />
       ))}
@@ -52,7 +52,7 @@ const Blog = () => {
   return (
     <section id='blog'>
         <h5>Blog</h5>
-      <h3>Recent Articles</h3>
+        <h2>Recent Articles</h2>
       <Articles />
     </section>
   );
