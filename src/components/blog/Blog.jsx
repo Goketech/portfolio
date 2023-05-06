@@ -35,7 +35,7 @@ const Articles = () => {
   return (
     <div>
       {articles.map((article) => (
-        <Article key={article.id} title={article.title} content={article.content} />
+        <Article key={article.id} title={article.title} cover_image={article.cover_image} url={article.url} />
       ))}
     </div>
   );
