@@ -20,6 +20,7 @@ const App = () => {
       <Portfolio />
       <Blog />
       <Contact />
+      <Testimonials />
       <Footer />
     </>
   );
