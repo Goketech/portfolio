@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 68vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -13,7 +13,7 @@ header {
 /*========== CTA ==========*/
 
 .cta {
-    margin-top: 2.5rem;
+    margin-top: 5.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -40,7 +40,7 @@ header {
 
 /*========== ME ==========*/
 
-.me {
+/* .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
@@ -50,7 +50,7 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
-}
+} */
 
 
 /*========== SCROLL DOWN ==========*/
@@ -76,7 +76,7 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 50vh;
     }
 
     .header__socials, .scroll__down {
