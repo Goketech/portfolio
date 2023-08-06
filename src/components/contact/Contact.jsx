@@ -83,8 +83,8 @@ const Contact = () => {
           >
             Send Message
           </button>
+          {formSubmitted && <p>Thank you! Your message has been sent successfully.</p>}
         </form>
-        {formSubmitted && <p>Thank you! Your message has been sent successfully.</p>}
       </div>
     </section>
   );
