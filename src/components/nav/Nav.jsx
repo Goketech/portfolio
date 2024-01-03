@@ -6,20 +6,59 @@ import {BiBook} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 import {BsNewspaper} from 'react-icons/bs'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+const sections = [
+  { id: '#', icon: <AiOutlineHome /> },
+  { id: '#about', icon: <AiOutlineUser /> },
+  { id: '#experience', icon: <BiBook /> },
+  { id: '#blog', icon: <BsNewspaper /> },
+  { id: '#contact', icon: <BiMessageSquareDetail /> },
+];
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [activeNav, setActiveNav] = useState('#');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionPositions = sections.reduce((positions, section) => {
+        positions[section.id] = document.querySelector(section.id).offsetTop;
+        return positions;
+      }, {});
+
+      const scrollPosition = window.scrollY;
+      let activeSection = '#';
+
+      for (const [section, position] of Object.entries(sectionPositions)) {
+        if (scrollPosition >= position) {
+          activeSection = section;
+        }
+      }
+
+      setActiveNav(activeSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <nav>
-      <a href='#' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-      <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-      <a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-      {/* <a href='#services' onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine/></a> */}
-      <a href='#blog' onClick={() => setActiveNav('#blog')} className={activeNav === '#blog' ? 'active' : ''}><BsNewspaper/></a>
-      <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail/></a>
+      {sections.map((section) => (
+        <a
+          key={section.id}
+          href={section.id}
+          onClick={() => setActiveNav(section.id)}
+          className={activeNav === section.id ? 'active' : ''}
+        >
+          {section.icon}
+        </a>
+      ))}
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
