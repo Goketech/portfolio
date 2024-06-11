@@ -41,17 +41,9 @@ const About = () => {
                     </div> */}
 
           <p>
-            As a software engineer with a proven ability to design, develop, and
-            deploy scalable backend systems and infrastructure, I am passionate
-            about creating innovations and bringing ideas into reality. A
-            computer science student at heart, I thrive on building impactful
-            and innovative software products. My dedication extends to crafting
-            scalable software systems and infrastructure, and I take pride in my
-            track record of developing and deploying scalable websites.
-            Alongside my technical prowess, I excel in essential soft skills
-            like effective communication and collaborative teamwork, empowering
-            me to contribute meaningfully to projects and deliver exceptional
-            results.
+            A software engineer with a proven ability to design, develop, and
+            deploy scalable softwares, I am passionate
+            about creating innovations and bringing ideas into reality.
           </p>
 
           <a href="#contact" className="btn btn-primary">
