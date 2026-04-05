@@ -1,26 +1,29 @@
-import React from "react";
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Services from './components/services/Services'
-import Portfolio from './components/portfolio/Portfolio'
-import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
-import Blog from './components/blog/Blog'
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Stats from './components/Stats/Stats';
+import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import About from './components/About/About';
+import Content from './components/Content/Content';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
-const App = () => {
+function App() {
   return (
     <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Blog />
-      <Contact />
-{/*       <Testimonials /> */}
+      <Navbar />
+      <Hero />
+      <main>
+        <Stats />
+        <Experience />
+        <Skills />
+        <Projects />
+        <About />
+        <Content />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

@@ -1,0 +1,86 @@
+:root {
+  /* ─── Color System ─── */
+  --color-bg-base: #06060B;
+  --color-bg-surface: #0D0D14;
+  --color-bg-card: #12121C;
+  --color-bg-elevated: #18182A;
+  
+  --color-accent-primary: #7C6AFF;
+  --color-accent-primary-light: #9B8FFF;
+  --color-accent-secondary: #00E5B0;
+  --color-accent-tertiary: #FF6B9D;
+  --color-accent-warm: #FFB86C;
+  
+  --color-text-primary: #EEEEF8;
+  --color-text-secondary: #9090B0;
+  --color-text-muted: #55556E;
+  
+  --color-border: rgba(124, 106, 255, 0.08);
+  --color-border-hover: rgba(124, 106, 255, 0.2);
+  --color-glow: rgba(124, 106, 255, 0.06);
+  --color-glow-md: rgba(124, 106, 255, 0.15);
+  --color-glow-strong: rgba(124, 106, 255, 0.3);
+
+  /* ─── Gradients ─── */
+  --gradient-primary: linear-gradient(135deg, #7C6AFF, #00E5B0);
+  --gradient-hero: linear-gradient(135deg, #7C6AFF 0%, #9B8FFF 40%, #00E5B0 100%);
+  --gradient-warm: linear-gradient(135deg, #FF6B9D, #FFB86C);
+  --gradient-surface: linear-gradient(145deg, rgba(124, 106, 255, 0.04), rgba(0, 229, 176, 0.02));
+  --gradient-card-border: linear-gradient(145deg, rgba(124, 106, 255, 0.15), rgba(0, 229, 176, 0.08));
+
+  /* ─── Typography Scale ─── */
+  --font-heading: 'Inter', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-code: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --text-display: clamp(3.5rem, 8vw, 6rem);
+
+  /* ─── Spacing Scale (8px grid) ─── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ─── Border Radius ─── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ─── Shadows ─── */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 30px var(--color-glow-md);
+  --shadow-glow-strong: 0 0 60px var(--color-glow-strong);
+
+  /* ─── Motion ─── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s var(--ease-smooth);
+  --transition-smooth: 0.3s var(--ease-smooth);
+  --transition-slow: 0.5s var(--ease-out);
+
+  /* ─── Layout ─── */
+  --max-width: 1200px;
+  --section-padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 4vw, 2rem);
+}

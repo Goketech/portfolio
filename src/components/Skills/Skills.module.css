@@ -1,0 +1,129 @@
+.skillsSection {
+  padding: var(--section-padding);
+  background: var(--color-bg-base);
+  position: relative;
+}
+
+.skillsSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 600px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border-hover), transparent);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  margin-bottom: var(--space-16);
+}
+
+.title {
+  font-size: var(--text-4xl);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  font-family: var(--font-code);
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.specialCategory {
+  grid-column: 1 / -1;
+  background: rgba(124, 106, 255, 0.03);
+  border-color: rgba(124, 106, 255, 0.12);
+}
+
+.categoryCard {
+  background: var(--color-bg-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.categoryCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+}
+
+.categoryCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.categoryCard:hover::before { opacity: 1; }
+
+.categoryTitle {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-family: var(--font-code);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-5);
+}
+
+.specialCategory .categoryTitle {
+  color: var(--color-accent-primary-light);
+}
+
+.tagCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.pill {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: var(--color-bg-card);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-smooth);
+  cursor: default;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-border-hover);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.specialPill {
+  background: rgba(124, 106, 255, 0.06);
+  border-color: rgba(124, 106, 255, 0.12);
+}
+
+.specialPill:hover {
+  border-color: var(--color-accent-primary);
+  box-shadow: var(--shadow-glow);
+}
