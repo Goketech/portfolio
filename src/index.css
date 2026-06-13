@@ -16,9 +16,12 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
+  line-height: 1.65;
   overflow-x: hidden;
   background-color: var(--color-bg-base);
+  background-image:
+    radial-gradient(circle at 8% 5%, rgba(92, 68, 48, 0.08), transparent 35%),
+    radial-gradient(circle at 95% 8%, rgba(15, 106, 101, 0.05), transparent 26%);
 }
 
 /* ─── Base Typography ─── */
@@ -37,15 +40,15 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
   color: var(--color-text-primary);
 }
 
 p {
   color: var(--color-text-secondary);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 code, pre, .mono {
@@ -69,9 +72,13 @@ ul, ol {
   background-clip: text;
 }
 
+main {
+  position: relative;
+}
+
 /* ─── Selection ─── */
 ::selection {
-  background-color: var(--color-accent-primary);
+  background-color: var(--color-accent-secondary);
   color: #fff;
 }
 
@@ -85,12 +92,12 @@ ul, ol {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-bg-elevated);
+  background: #c8b9a5;
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-muted);
+  background: #b2a089;
 }
 
 /* ─── Section Dividers ─── */

@@ -1,6 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Bot, Globe, Link2, Wrench } from 'lucide-react';
 import styles from './About.module.css';
+
+const facts = [
+  { icon: Globe, text: 'Remote, Global' },
+  { icon: Bot, text: 'AI & MCP' },
+  { icon: Link2, text: 'Web3 builder' },
+  { icon: Wrench, text: 'Always shipping' }
+];
 
 const About = () => {
   return (
@@ -52,22 +60,18 @@ const About = () => {
 
             {/* Fun Facts Grid */}
             <div className={styles.factsGrid}>
-              <div className={styles.factCard}>
-                <span className={styles.factIcon}>🌍</span>
-                <span className={styles.factText}>Remote, Global</span>
-              </div>
-              <div className={styles.factCard}>
-                <span className={styles.factIcon}>🤖</span>
-                <span className={styles.factText}>AI & MCP</span>
-              </div>
-              <div className={styles.factCard}>
-                <span className={styles.factIcon}>⛓️</span>
-                <span className={styles.factText}>Web3 builder</span>
-              </div>
-              <div className={styles.factCard}>
-                <span className={styles.factIcon}>🛠️</span>
-                <span className={styles.factText}>Always shipping</span>
-              </div>
+              {facts.map((fact) => {
+                const Icon = fact.icon;
+
+                return (
+                  <div className={styles.factCard} key={fact.text}>
+                    <span className={styles.factIcon} aria-hidden="true">
+                      <Icon size={16} strokeWidth={2} />
+                    </span>
+                    <span className={styles.factText}>{fact.text}</span>
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
 

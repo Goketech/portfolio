@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@fontsource/manrope';
+import '@fontsource/newsreader';
+import '@fontsource/jetbrains-mono';
 import './tokens.css';
-import './index.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

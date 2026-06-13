@@ -142,7 +142,18 @@
   box-shadow: var(--shadow-sm);
 }
 
-.factIcon { font-size: var(--text-lg); }
+.factIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: rgba(15, 106, 101, 0.08);
+  color: var(--color-accent-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 .factText { color: var(--color-text-secondary); font-size: var(--text-sm); font-weight: 500; }
 
 @media (max-width: 1024px) {

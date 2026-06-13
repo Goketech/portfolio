@@ -12,12 +12,12 @@ const experiences = [
     primaryCard: true,
     featuredProject: {
       title: 'Open Banking Infrastructure',
-      description: 'Building and maintaining core APIs and services that power financial data access for businesses across Africa. Contributing to payment integrations, webhook systems, and developer-facing tooling.',
+      description: 'Building and maintaining core APIs and services that power open banking for businesses across Africa. Contributing to payment integrations, webhook systems, and developer-facing tooling.',
       tags: ['Node.js', 'REST APIs', 'Webhooks', 'MongoDB', 'Redis'],
-      status: '🟢 Active'
+      status: 'Active'
     },
     responsibilities: [
-      'Engineer backend services handling high-throughput API traffic for financial data aggregation.',
+      'Engineer backend services handling high-throughput API traffic for payment services.',
       'Build and optimize payment integration flows across multiple banking partners.',
       'Design webhook delivery systems with retry logic and guaranteed delivery.',
       'Collaborate with cross-functional teams to ship developer-facing features.'
@@ -43,16 +43,16 @@ const experiences = [
   {
     id: 'blockchain',
     role: 'Blockchain Developer',
-    company: 'Web3 Projects',
-    badge: 'Ongoing · Blockchain · DeFi',
+    company: 'Turbine',
+    badge: 'Completed · Blockchain · DeFi',
     primaryCard: false,
     featuredProject: {
       title: 'Smart Contracts & Decentralized Apps',
       description: 'Designing and deploying smart contracts, building decentralized application frontends, and exploring DeFi protocol integrations.',
-      tags: ['Solidity', 'Ethers.js', 'React', 'IPFS'],
+      tags: ['Solana', 'Anchor', 'React', 'Rust'],
     },
     responsibilities: [
-      'Writing and auditing Solidity smart contracts for token and DeFi use cases.',
+      'Writing and auditing Solana smart contracts for token and DeFi use cases.',
       'Building Web3-connected frontends with wallet integration.',
     ]
   }
@@ -100,7 +100,10 @@ const Experience = () => {
                   <div className={styles.projectHeader}>
                     <h4 className={styles.projectTitle}>{exp.featuredProject.title}</h4>
                     {exp.featuredProject.status && (
-                      <span className={styles.statusBadge}>{exp.featuredProject.status}</span>
+                      <span className={styles.statusBadge}>
+                        <span className={styles.statusDot} aria-hidden="true"></span>
+                        {exp.featuredProject.status}
+                      </span>
                     )}
                   </div>
                   <p className={styles.projectDesc}>{exp.featuredProject.description}</p>

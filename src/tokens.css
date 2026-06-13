@@ -1,36 +1,36 @@
 :root {
   /* ─── Color System ─── */
-  --color-bg-base: #06060B;
-  --color-bg-surface: #0D0D14;
-  --color-bg-card: #12121C;
-  --color-bg-elevated: #18182A;
-  
-  --color-accent-primary: #7C6AFF;
-  --color-accent-primary-light: #9B8FFF;
-  --color-accent-secondary: #00E5B0;
-  --color-accent-tertiary: #FF6B9D;
-  --color-accent-warm: #FFB86C;
-  
-  --color-text-primary: #EEEEF8;
-  --color-text-secondary: #9090B0;
-  --color-text-muted: #55556E;
-  
-  --color-border: rgba(124, 106, 255, 0.08);
-  --color-border-hover: rgba(124, 106, 255, 0.2);
-  --color-glow: rgba(124, 106, 255, 0.06);
-  --color-glow-md: rgba(124, 106, 255, 0.15);
-  --color-glow-strong: rgba(124, 106, 255, 0.3);
+  --color-bg-base: #f5f1e8;
+  --color-bg-surface: #fcf8f1;
+  --color-bg-card: #efe7da;
+  --color-bg-elevated: #e3d8c7;
+
+  --color-accent-primary: #5c4430;
+  --color-accent-primary-light: #83644b;
+  --color-accent-secondary: #0f6a65;
+  --color-accent-tertiary: #b4672b;
+  --color-accent-warm: #c58d54;
+
+  --color-text-primary: #1f1a14;
+  --color-text-secondary: #494238;
+  --color-text-muted: #766f64;
+
+  --color-border: rgba(46, 33, 21, 0.12);
+  --color-border-hover: rgba(46, 33, 21, 0.24);
+  --color-glow: rgba(92, 68, 48, 0.04);
+  --color-glow-md: rgba(92, 68, 48, 0.08);
+  --color-glow-strong: rgba(92, 68, 48, 0.16);
 
   /* ─── Gradients ─── */
-  --gradient-primary: linear-gradient(135deg, #7C6AFF, #00E5B0);
-  --gradient-hero: linear-gradient(135deg, #7C6AFF 0%, #9B8FFF 40%, #00E5B0 100%);
-  --gradient-warm: linear-gradient(135deg, #FF6B9D, #FFB86C);
-  --gradient-surface: linear-gradient(145deg, rgba(124, 106, 255, 0.04), rgba(0, 229, 176, 0.02));
-  --gradient-card-border: linear-gradient(145deg, rgba(124, 106, 255, 0.15), rgba(0, 229, 176, 0.08));
+  --gradient-primary: linear-gradient(135deg, #5c4430, #0f6a65);
+  --gradient-hero: linear-gradient(135deg, #5c4430 0%, #83644b 55%, #0f6a65 100%);
+  --gradient-warm: linear-gradient(135deg, #83644b, #c58d54);
+  --gradient-surface: linear-gradient(145deg, rgba(92, 68, 48, 0.03), rgba(15, 106, 101, 0.03));
+  --gradient-card-border: linear-gradient(145deg, rgba(92, 68, 48, 0.25), rgba(15, 106, 101, 0.18));
 
   /* ─── Typography Scale ─── */
-  --font-heading: 'Inter', -apple-system, sans-serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-heading: 'Newsreader', 'Georgia', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-code: 'JetBrains Mono', 'Fira Code', monospace;
 
   --text-xs: 0.75rem;
@@ -42,7 +42,7 @@
   --text-3xl: 2rem;
   --text-4xl: 2.5rem;
   --text-5xl: 3.5rem;
-  --text-display: clamp(3.5rem, 8vw, 6rem);
+  --text-display: clamp(2.8rem, 7vw, 5rem);
 
   /* ─── Spacing Scale (8px grid) ─── */
   --space-1: 0.25rem;
@@ -67,9 +67,9 @@
   --radius-full: 9999px;
 
   /* ─── Shadows ─── */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 3px 12px rgba(26, 21, 15, 0.06);
+  --shadow-md: 0 12px 28px rgba(26, 21, 15, 0.1);
+  --shadow-lg: 0 22px 58px rgba(26, 21, 15, 0.13);
   --shadow-glow: 0 0 30px var(--color-glow-md);
   --shadow-glow-strong: 0 0 60px var(--color-glow-strong);
 

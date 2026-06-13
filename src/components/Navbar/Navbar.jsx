@@ -5,9 +5,10 @@ import styles from './Navbar.module.css';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'Work', href: '#work' },
+  { name: 'Experience', href: '#work' },
+  { name: 'Projects', href: '#projects' },
   { name: 'About', href: '#about' },
-  { name: 'Writing', href: '#writing' },
+  { name: 'Writing', href: '#writing' }
 ];
 
 const Navbar = () => {
@@ -37,7 +38,8 @@ const Navbar = () => {
     >
       <div className={styles.container}>
         <a href="#home" className={styles.logo}>
-          goke<span className={styles.cursor}>_</span>
+          Modupe Akanni
+          <span className={styles.logoSub}>software engineer</span>
         </a>
 
         {/* Desktop Nav */}
@@ -52,7 +54,7 @@ const Navbar = () => {
             ))}
           </ul>
           <a href="#contact" className={styles.ctaButton}>
-            Let's talk
+            Contact
           </a>
         </nav>
 
@@ -90,7 +92,7 @@ const Navbar = () => {
                   className={styles.mobileCtaButton}
                   onClick={() => setIsOpen(false)}
                 >
-                  Let's talk
+                  Contact
                 </a>
               </li>
             </ul>
